@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html> 
+  <head>
+    <meta charset="UTF-8">
+    <title>Mensaje Encriptado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+          <img class="logo" src="./imagenes/logo.png">
+      </header>
+      <main>
+          <section class="seccion1">
+            <textarea type="text" rows="6" cols="40" class="area" placeholder="Ingrese texto aqui"></textarea>
+            <div class="espacio-botones">
+            <div class="vector"><img src="./imagenes/vector2.png"><h6>Sólo letras minusculas y sin acentos</h6></div>
+            <button type="button"  id="boton-Encriptar" class="btnEncriptar" onclick ="btnEncriptar()">Encriptar</button>
+            <button type="button" id="botonDesencriptar" class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+          </section>
+          <section class="seccion2">
+              <div class="espacio-muneco">
+                <img src="./imagenes/muneco.png">
+              </div>
+              <div class="espacio-h3">
+                <h3>Ningun mensaje fue encontrado</h3>
+              </div>
+              <div class="espacio-parrafo">
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+              </div>
+              <div  class="espacio-resultado">
+                <h3>Mensaje:</h3>
+                <textarea   name="texto-resultado" id="texto-resultado" class="texto-resultado"></textarea>
+              </div>
+              <div class="espacio-copiar">
+                <button type="button" id="boton-copiar" class="boton-copiar" onclick="copiar(texto-resultado)">Copiar</button>
+              </div>
+          </section>
+      </main>
+      <script src="./script.js"></script>
+  </body>
+
+  <footer>
+    <p class="copyright"> &copy Copyright Maribel López Frias 2022</p>
+  </footer>
+</html>
